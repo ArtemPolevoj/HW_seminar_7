@@ -21,7 +21,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Width;
 
 public class KareliaViewCard extends ListItem {
 
-    public KareliaViewCard(String text, String url) {
+    public KareliaViewCard(String title, String url) {
         addClassNames(Background.CONTRAST_5, Display.FLEX, FlexDirection.COLUMN, AlignItems.START, Padding.MEDIUM,
                 BorderRadius.LARGE);
 
@@ -33,27 +33,28 @@ public class KareliaViewCard extends ListItem {
         Image image = new Image();
         image.setWidth("100%");
         image.setSrc(url);
-        image.setAlt(text);
+       // image.setAlt(text);
 
         div.add(image);
 
         Span header = new Span();
         header.addClassNames(FontSize.XLARGE, FontWeight.SEMIBOLD);
-        header.setText("Title");
+        header.setText(title);
 
-        Span subtitle = new Span();
-        subtitle.addClassNames(FontSize.SMALL, TextColor.SECONDARY);
-        subtitle.setText("Card subtitle");
+//        Span subtitle = new Span();
+//        subtitle.addClassNames(FontSize.SMALL, TextColor.SECONDARY);
+//        subtitle.setText("Card subtitle");
 
-        Paragraph description = new Paragraph(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.");
-        description.addClassName(Margin.Vertical.MEDIUM);
+//        Paragraph description = new Paragraph(
+//                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.");
+//        description.addClassName(Margin.Vertical.MEDIUM);
 
-        Span badge = new Span();
-        badge.getElement().setAttribute("theme", "badge");
-        badge.setText("Label");
+//        Span badge = new Span();
+//        badge.getElement().setAttribute("theme", "badge");
+//        badge.setText("Label");
 
-        add(div, header, subtitle, description, badge);
+     //   add(div, header, subtitle, description, badge);
+        add(div, header);
 
     }
 }

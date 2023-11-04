@@ -32,18 +32,18 @@ public class KareliaView extends Main implements HasComponents, HasStyle {
     public KareliaView() {
         constructUI();
 
-        imageContainer.add(new KareliaViewCard("Snow mountains under stars",
-                "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"));
-        imageContainer.add(new KareliaViewCard("Snow covered mountain",
-                "https://images.unsplash.com/photo-1512273222628-4daea6e55abb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"));
-        imageContainer.add(new KareliaViewCard("River between mountains",
-                "https://images.unsplash.com/photo-1536048810607-3dc7f86981cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"));
-        imageContainer.add(new KareliaViewCard("Milky way on mountains",
-                "https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"));
-        imageContainer.add(new KareliaViewCard("Mountain with fog",
-                "https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"));
-        imageContainer.add(new KareliaViewCard("Mountain at night",
-                "https://images.unsplash.com/photo-1562832135-14a35d25edef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=815&q=80"));
+        imageContainer.add(new KareliaViewCard("Кижи",
+                "https://traveltimes.ru/wp-content/uploads/2021/09/kizhi5.jpg"));
+        imageContainer.add(new KareliaViewCard("Кивач",
+                "https://avatars.dzeninfra.ru/get-zen_doc/1718877/pub_64da9ece4e2a872cc4416bb8_64daaf934e2a872cc44f5bf7/scale_1200"));
+        imageContainer.add(new KareliaViewCard("Рускеала",
+                "https://ruskeala.ru/d/ayu_82021600xtiny.jpg"));
+        imageContainer.add(new KareliaViewCard("Воттоваара",
+                "https://sportishka.com/uploads/posts/2022-11/1667474446_22-sportishka-com-p-vottovaara-gora-pinterest-25.jpg"));
+        imageContainer.add(new KareliaViewCard("Ладожские шхеры",
+                "https://static.guidego.ru/625fe04b31b8e8d905c054a5.1600x1200.jpeg"));
+        imageContainer.add(new KareliaViewCard("Марциальные воды",
+                "https://europeanmuseumforum.ru/wp-content/uploads/a/1/8/a18a087c6afd5a064010628db11049e2.jpeg"));
 
     }
 
@@ -55,9 +55,9 @@ public class KareliaView extends Main implements HasComponents, HasStyle {
         container.addClassNames(AlignItems.CENTER, JustifyContent.BETWEEN);
 
         VerticalLayout headerContainer = new VerticalLayout();
-        H2 header = new H2("Beautiful photos");
+        H2 header = new H2("Карелия");
         header.addClassNames(Margin.Bottom.NONE, Margin.Top.XLARGE, FontSize.XXXLARGE);
-        Paragraph description = new Paragraph("Royalty free photos and pictures, courtesy of Unsplash");
+         Paragraph description = new Paragraph();
         description.addClassNames(Margin.Bottom.XLARGE, Margin.Top.NONE, TextColor.SECONDARY);
         headerContainer.add(header, description);
 
